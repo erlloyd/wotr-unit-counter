@@ -4,8 +4,6 @@
 }
 
 .header {
-    display: flex;
-    justify-content: center;
 }
 
 .army-container {
@@ -18,7 +16,24 @@
     font-weight: 600;
 }
 
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .army-name {
+    height: 10%;
     padding: 10px;
     font-size: 20px;
 }
+
+.army-counter {
+    height: 30%;
+
+    span {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+

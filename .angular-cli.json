@@ -19,9 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -51,8 +52,9 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {},
-    "poll": 1000
+    "styleExt": "scss",
+    "poll": 1000,
+    "component": {
+    }
   }
 }
