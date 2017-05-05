@@ -1,40 +1,7 @@
+@import 'src/app/sass/globals.scss';
+
 .app-wrapper {
     min-width: 200px;
     font-family: 'Open Sans';
-}
-
-.army-container {
-    height: 300px;
-    width: 300px;
-    background: rgba(255,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-}
-
-.centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.army-name {
-    height: 10%;
-    padding: 10px;
-    font-size: 20px;
-}
-
-.army-counter {
-    height: 30%;
-
-    span {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-.button-container {
-    flex-direction: column;
 }
 
