@@ -2,12 +2,12 @@
   <span class='army-name'>{{name}}</span>
   <div class='army-counter centered'>
     <img src='/assets/images/SauronElite.png' />
-    <span>12</span>
+    <span>{{activeTroops}}</span>
     <span class='button-container centered'>
-        <div>KILL</div>
-        <div>MUSTER</div>
+        <button (click)="killUnit()">KILL</button>
+        <button (click)="musterUnit()">MUSTER</button>
       </span>
-    <span>5</span>
+    <span>{{totalTroops - activeTroops}}</span>
   </div>
   <div class='army-counter centered'>
     <img src='/assets/images/SauronRegular.png' /><span>12</span><span>5</span>
