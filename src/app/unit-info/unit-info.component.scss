@@ -1,8 +1,10 @@
 @import 'src/app/sass/globals.scss';
 
-.army-counter {
+:host {
     height: 30%;
+}
 
+.army-counter {
     span {
         padding-left: 20px;
         padding-right: 20px;

@@ -3,7 +3,8 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-unit-info',
   templateUrl: './unit-info.component.html',
-  styleUrls: ['./unit-info.component.scss']
+  styleUrls: ['./unit-info.component.scss'],
+  host: {'class': 'centered'}
 })
 export class UnitInfoComponent implements OnInit {
 
