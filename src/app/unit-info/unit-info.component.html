@@ -1,0 +1,9 @@
+<div class='army-counter centered'>
+  <img src={{unitImage}} />
+  <span>{{activeTroops}}</span>
+  <span class='button-container centered'>
+        <button (click)="killUnit()">KILL</button>
+        <button (click)="musterUnit()">MUSTER</button>
+      </span>
+  <span>{{totalTroops - activeTroops}}</span>
+</div>

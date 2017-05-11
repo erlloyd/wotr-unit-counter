@@ -12,21 +12,6 @@ export class ArmyBoxComponent implements OnInit {
   ngOnInit() {
   }
 
-  killUnit() {
-    if (this.activeTroops > 0) {
-      this.activeTroops--;
-    }
-  }
-
-  musterUnit() {
-    if (this.activeTroops < this.totalTroops) {
-      this.activeTroops++;
-    }
-  }
-
   @Input()
   name: string = '';
-
-  totalTroops: number = 20;
-  activeTroops: number = 12;
-}
+} 

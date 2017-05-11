@@ -1,18 +1,18 @@
 <div class='army-container centered'>
   <span class='army-name'>{{name}}</span>
-  <div class='army-counter centered'>
-    <img src='/assets/images/SauronElite.png' />
-    <span>{{activeTroops}}</span>
-    <span class='button-container centered'>
-        <button (click)="killUnit()">KILL</button>
-        <button (click)="musterUnit()">MUSTER</button>
-      </span>
-    <span>{{totalTroops - activeTroops}}</span>
-  </div>
-  <div class='army-counter centered'>
-    <img src='/assets/images/SauronRegular.png' /><span>12</span><span>5</span>
-  </div>
-  <div class='army-counter centered'>
-    <img src='/assets/images/Nazgul.png' /><span>12</span><span>5</span>
-  </div>
+  
+  <app-unit-info
+    unitImage='/assets/images/SauronElite.png'
+    totalTroops=20
+    initialActiveTroops=12></app-unit-info>
+
+  <app-unit-info
+    unitImage='/assets/images/SauronRegular.png'
+    totalTroops=20
+    initialActiveTroops=12></app-unit-info>
+
+  <app-unit-info
+    unitImage='/assets/images/Nazgul.png'
+    totalTroops=20
+    initialActiveTroops=12></app-unit-info>
 </div>

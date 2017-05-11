@@ -1,0 +1,14 @@
+@import 'src/app/sass/globals.scss';
+
+.army-counter {
+    height: 30%;
+
+    span {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.button-container {
+    flex-direction: column;
+}

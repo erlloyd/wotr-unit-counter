@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ArmyBoxComponent } from './army-box/army-box.component';
+import { UnitInfoComponent } from './unit-info/unit-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArmyBoxComponent
+    ArmyBoxComponent,
+    UnitInfoComponent
   ],
   imports: [
     BrowserModule,
