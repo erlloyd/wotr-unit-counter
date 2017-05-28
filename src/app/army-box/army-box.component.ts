@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Army } from 'app/models/army';
 
 @Component({
   selector: 'app-army-box',
@@ -13,5 +14,5 @@ export class ArmyBoxComponent implements OnInit {
   }
 
   @Input()
-  name: string = '';
+  army: Army;
 } 

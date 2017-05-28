@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { UnitInfo } from 'app/models/unit-info';
 
 @Component({
   selector: 'app-unit-info',
@@ -14,14 +15,14 @@ export class UnitInfoComponent implements OnInit {
   }
 
   killUnit() {
-    if (this.activeTroops > 0) {
-      this.activeTroops--;
+    if (this.unitInfo.numActive > 0) {
+      this.unitInfo.numActive--;
     }
   }
 
   musterUnit() {
-    if (this.activeTroops < this.totalTroops) {
-      this.activeTroops++;
+    if (this.unitInfo.numActive < this.unitInfo.numTotal) {
+      this.unitInfo.numActive++;
     }
   }
 
@@ -29,9 +30,5 @@ export class UnitInfoComponent implements OnInit {
   unitImage: string = '';
 
   @Input()
-  totalTroops: number = 0;
-
-  @Input('initialActiveTroops')
-  activeTroops: number = 0;
-
+  unitInfo: UnitInfo = new UnitInfo();
 }

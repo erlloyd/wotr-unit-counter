@@ -1,18 +1,15 @@
 <div class='army-container centered'>
-  <span class='army-name'>{{name}}</span>
+  <span class='army-name'>{{army.name}}</span>
   
   <app-unit-info
     unitImage='/assets/images/SauronElite.png'
-    totalTroops=20
-    initialActiveTroops=12></app-unit-info>
+    [unitInfo]="army.elite"></app-unit-info>
 
   <app-unit-info
     unitImage='/assets/images/SauronRegular.png'
-    totalTroops=20
-    initialActiveTroops=12></app-unit-info>
+    [unitInfo]="army.regular"></app-unit-info>
 
   <app-unit-info
     unitImage='/assets/images/Nazgul.png'
-    totalTroops=20
-    initialActiveTroops=12></app-unit-info>
+    [unitInfo]="army.leaders"></app-unit-info>
 </div>
